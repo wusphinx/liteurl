@@ -10,8 +10,14 @@
 2. 将url及哈希值入库得到`F_id`
 3. 将`F_id`按`baseStr`（0-9a-zA-Z-+）进制表示返回
 
-数据库结构参考如下
+# 原url转成短链
+![短链](./docs/convert.png)
 
+# 短链还原成原url
+![url](./docs/restor.png)
+
+
+数据库表结构参考如下
 ```
 CREATE TABLE IF NOT EXISTS `t_short_url` (
   `F_id` bigint(64) unsigned NOT NULL AUTO_INCREMENT,
